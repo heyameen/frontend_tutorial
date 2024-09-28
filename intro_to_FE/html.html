@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic HTML</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            header {
+                background-color: #f4f4f4;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #2c3e50;
+            }
+
+            pre {
+                background-color: #f4f4f4;
+                padding: 10px;
+                border-radius: 5px;
+                overflow-x: auto;
+            }
+
+            @media (max-width: 600px) {
+                body {
+                    padding: 10px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Basic HTML</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overview.html">1. Overview</a></li>
+                    <li><a href="tools.html">2. Essential Tools</a></li>
+                    <li><a href="setup.html">3. Setup</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>HTML document structure</h2>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+
+                <h3>Explanation of each part:</h3>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: Declares that this is an HTML5 document</li>
+                    <li><code>&lt;html&gt;</code>: The root element of the HTML page</li>
+                    <li><code>&lt;head&gt;</code>: Contains meta-information about the document</li>
+                    <li><code>&lt;meta charset="UTF-8"&gt;</code>: Specifies the character encoding</li>
+                    <li><code>&lt;meta name="viewport"&gt;</code>: Ensures proper rendering on mobile devices</li>
+                    <li><code>&lt;title&gt;</code>: Specifies the title of the document (shown in browser tab)</li>
+                    <li><code>&lt;body&gt;</code>: Contains the visible content of the document</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Common HTML elements</h2>
+
+                <h3>Headings:</h3>
+                <pre>
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;h3&gt;Sub-subheading&lt;/h3&gt;
+&lt;!-- ... up to h6 --&gt;
+            </pre>
+
+                <h3>Paragraphs:</h3>
+                <pre>
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+            </pre>
+
+                <h3>Links:</h3>
+                <pre>
+&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+            </pre>
+
+                <h3>Images:</h3>
+                <pre>
+&lt;img src="image.jpg" alt="Description of the image"&gt;
+            </pre>
+
+                <h3>Lists:</h3>
+                <pre>
+&lt;ul&gt;
+    &lt;li&gt;Unordered list item&lt;/li&gt;
+    &lt;li&gt;Another item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Ordered list item&lt;/li&gt;
+    &lt;li&gt;Another item&lt;/li&gt;
+&lt;/ol&gt;
+            </pre>
+
+                <h3>Tables:</h3>
+                <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+
+                <h3>Forms:</h3>
+                <pre>
+&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+            </section>
+
+            <section>
+                <h2>Semantic HTML</h2>
+                <p>Semantic elements provide meaning to the structure of web content:</p>
+                <ul>
+                    <li><code>&lt;header&gt;</code>: Introductory content or navigation links</li>
+                    <li><code>&lt;nav&gt;</code>: Navigation links</li>
+                    <li><code>&lt;main&gt;</code>: Main content of the document</li>
+                    <li><code>&lt;article&gt;</code>: Self-contained composition (e.g., blog post, news article)</li>
+                    <li><code>&lt;section&gt;</code>: Standalone section of content</li>
+                    <li><code>&lt;aside&gt;</code>: Content tangentially related to the main content</li>
+                    <li><code>&lt;footer&gt;</code>: Footer of a document or section</li>
+                </ul>
+
+                <h3>Example of semantic HTML structure:</h3>
+                <pre>
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Website Title&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt; 
+     
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Article Title&lt;/h2&gt;
+            &lt;p&gt;Article content...&lt;/p&gt;
+        &lt;/article&gt;
+        
+        &lt;section&gt;
+            &lt;h2&gt;Section Title&lt;/h2&gt;
+            &lt;p&gt;Section content...&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    
+    &lt;aside&gt;
+        &lt;h3&gt;Related Links&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/aside&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2024 Your Company. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+            </pre>
+
+                <p>Using semantic HTML improves accessibility, search engine optimization (SEO), and code readability.
+                    It provides a clear structure to your document, making it easier for both humans and machines to
+                    understand the content and its organization.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Introduction to Frontend Development. All rights reserved.</p>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting Up the Development Environment</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Setting Up the Development Environment</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="overview.html">1. Overview</a></li>
+                <li><a href="tools.html">2. Essential Tools</a></li>
+                <li><a href="html.html">4. Basic HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Installing a code editor (VSCode recommended)</h2>
+            <ol>
+                <li>Download VSCode from the official website (https://code.visualstudio.com/)</li>
+                <li>Run the installer and follow the prompts</li>
+                <li>Launch VSCode and familiarize yourself with the interface</li>
+                <li>Install useful extensions:
+                    <ul>
+                        <li>Live Server (for local development server)</li>
+                        <li>Prettier (code formatter)</li>
+                        <li>ESLint (JavaScript linter)</li>
+                        <li>Auto Rename Tag (for HTML editing)</li>
+                        <li>Color Highlight (for visualizing colors in code)</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Browser setup and extensions</h2>
+            <ol>
+                <li>Install Google Chrome or Mozilla Firefox</li>
+                <li>Set up developer tools:
+                    <ul>
+                        <li>Chrome: Menu > More Tools > Developer Tools (or F12)</li>
+                        <li>Firefox: Menu > Web Developer > Toggle Tools (or F12)</li>
+                    </ul>
+                </li>
+                <li>Install useful browser extensions:
+                    <ul>
+                        <li>Web Developer: Adds a toolbar with various web development tools</li>
+                        <li>ColorZilla: Color picker and eyedropper tool</li>
+                        <li>Responsive Web Design Tester: Test websites at different screen sizes</li>
+                        <li>JSON Formatter: Makes JSON data more readable</li>
+                        <li>Lighthouse: Audits for performance, accessibility, and best practices</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Introduction to version control (Git) and creating a GitHub account</h2>
+            <ol>
+                <li>Install Git from https://git-scm.com/</li>
+                <li>Set up Git with your name and email:
+                    <pre>
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+                    </pre>
+                </li>
+                <li>Create a GitHub account at https://github.com/</li>
+                <li>Basic Git workflow:
+                    <ul>
+                        <li>Initialize a repository: <code>git init</code></li>
+                        <li>Add files to staging: <code>git add .</code></li>
+                        <li>Commit changes: <code>git commit -m "Commit message"</code></li>
+                        <li>Create a remote repository on GitHub</li>
+                        <li>Link local repository to remote: <code>git remote add origin &lt;repository-url&gt;</code></li>
+                        <li>Push to remote repository: <code>git push -u origin main</code></li>
+                    </ul>
+                </li>
+                <li>Collaborative Git features:
+                    <ul>
+                        <li>Branching and merging</li>
+                        <li>Pull requests</li>
+                        <li>Code reviews</li>
+                        <li>Issue tracking</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Introduction to Frontend Development. All rights reserved.</p>
+    </footer>
+</body>
+</html>
